@@ -27,6 +27,8 @@ public class IntelligentNetworkServiceImpl implements IntelligentNetworkService{
         final BalanceResponse balanceResponse = new BalanceResponse();
         if(StringUtils.isEmpty(partnerCode)) {
             balanceResponse.setResponseCode(ResponseCode.INVALID_REQUEST.getCode());
+//            LOGGER.info("Haaaaa PCode uripi? >>>> : {}", partnerCode);
+//            LOGGER.info("Msisdn iripo wani >>>> : {}", msisdn);
             balanceResponse.setNarrative("Invalid request, missing partner code");
             return balanceResponse;
         }
